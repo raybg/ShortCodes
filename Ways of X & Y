@@ -1,0 +1,16 @@
+# Way 1 
+
+X = dataset.iloc[:,:4]
+y = dataset.loc[:,'price']
+print(X,y)
+
+
+# Way 2
+
+print(df[df['Title'] == 'Engineer'])
+
+
+# Way3
+
+
+
