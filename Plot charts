@@ -1,0 +1,26 @@
+#1. Chart in matplotlib
+import matplotlib.pyplot as plt 
+
+plt.scatter(X_test, y_test, color = 'red')
+plt.plot(X_train, reg.predict(X_train), color = 'blue')
+plt.legend
+
+plt.show()
+
+
+
+
+
+#2. Plot chart in Seaborn
+import seaborn as sns 
+
+sns.set(style ="whitegrid")              or “darkgrid”.
+
+iris = sns.load_dataset('iris'); 
+  
+# deciding the attributes of dataset on which plot should be made 
+ax = sns.stripplot(x = 'species', y = 'sepal_length', data = iris);                   or sns.swarmplot
+  
+plt.title('Graph') 
+
+plt.show() 
