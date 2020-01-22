@@ -1,0 +1,5 @@
+# NaN values within the columns would be excluded.
+# Non-numeric data type columns in the DF will be ignored.
+
+df.corr()
+
