@@ -1,0 +1,3 @@
+# Fill Nan values under any columns with Median of the entire columns
+
+df.address = df.address.fillna(df.address.median())
