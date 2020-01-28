@@ -1,0 +1,4 @@
+# UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa0 in position 13: invalid start byte
+
+
+df = pd.read_csv("C:\\Users\\g.bhargavi\\Desktop\\Orders1.csv",encoding='ISO-8859-8')
