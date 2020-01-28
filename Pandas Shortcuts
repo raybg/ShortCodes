@@ -1,0 +1,40 @@
+# Transpose
+df.T
+
+# Display Index & Columns
+df.index
+df.columns
+
+#Date as Index
+dates = pd.date_range('20130101', periods=6)
+
+# Sorting by an axis
+df.sort_index(axis=1, ascending=False)
+
+# Sorting by values (Columns)
+df.sort_values(by='B')
+
+#Grouping by a categorical value
+df.groupby("grade").size()
+
+# Selecting a single column
+df['A']
+
+# Slices the rows
+df[0:3]    OR    df['20130102':'20130104']           # Name of the row, if any
+
+#COPY ()
+df2 = df.copy()
+df2['E'] = ['one', 'one','two','three','four','three']
+df2      
+Out: DF + DF2(new column)
+
+# Fill Nan
+df.fillna(value=5)
+
+# Pivot 
+pd.pivot_table(df, values='D', index=['A', 'B'], columns=['C'])
+
+#Time zone representation
+ts_utc = ts.tz_localize('UTC')
+ts_utc.tz_convert('US/Eastern')
