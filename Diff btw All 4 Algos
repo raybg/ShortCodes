@@ -1,0 +1,46 @@
+Linear Regression:
+It is to predict the number.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Logistics Regression:
+It is to predict Success/Failure , Yes/No, Large/Medium Size and other binary.
+
+------------------------------------------------------------------------------------------------------------------------
+
+KNN:
+K-nearest neighbors is a classification algorithm, which is a subset of supervised learning.
+
+EX1 - If I have a dataset of basketball players, their positions, and their measurements, 
+and I want to assign positions to basketball players in a new dataset where I have measurements but no positions, 
+I might use k-nearest neighbors.
+
+EX2 - 
+Let’s say you go to a party which is hosting people with different tastes and likes. For the sake of example, we’ll assume like-minded 
+people know each other and are huddled together talking about space, politics, and literature. You enter the party and you aren’t sure 
+which group to mingle with as you like all three topics but your position in the room will decide which group you’ll belong to.
+
+Let’s assume you are standing at a point where in 3 (k=3) people nearest to you 2 are space enthusiast and 1 loves literature. 
+A voting will happen and you’ll join the space nerd group.
+A little technical perspective, for every new test point, Euclidean distance is calculated with every point in the data set and 
+k nearest points vote to find which class will the new point belong to. It has a time complexity of O(ndk) which can get really really 
+big as size of data increases.
+------------------------------------------------------------------------------------------------------------------------
+
+K Means Cluster:
+It is to predict that on which category do you fall into.
+
+K-means is a clustering algorithm, which is a subset of unsupervised learning.
+
+EX - If I have a dataset of basketball players who need to be grouped into k distinct groups based off of similarity,
+I might use k-means.
+
+EX2 - Let’s reuse the same party example. Like minded people are still huddled together but no one else knows how many groups are there 
+and what point belongs to what group. You get the task of making this distinction. You proceed by making 3 (k=3) random people the 
+leader in the room. Start assigning whoever is closest to those leaders as part of their clan. Now you’ll have two clans but not necessarily 
+the right clan. You find the center of this newly formed clan and now reassign the leader as the one who is in the middle. 
+You re-run these 2 steps over and over 
+until no new changes can happen. The assigned people will be the like-minded people as long as you chose k judiciously.
+
+You can choose k by looking at the inertia curve. I’ll let you do the homework on that. Hope this helps.
+------------------------------------------------------------------------------------------------------------------------
