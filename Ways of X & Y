@@ -2,6 +2,9 @@
 
 y = df['Price']
 X = df.drop(columns = ['Price'])
+X = np.array(X).reshape((1, -1))        # To avoid the reshape np error
+y = np.array(y).reshape((1, -1))
+
 
 
 # Way 2 
