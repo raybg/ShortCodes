@@ -1,16 +1,20 @@
-# Way 1 
+# Way 1 (Multiple Linear Reg - Preferred)
+
+y = df['Price']
+X = df.drop(columns = ['Price'])
+
+
+# Way 2 
 
 X = dataset.iloc[:,:4]
 y = dataset.loc[:,'price']
 print(X,y)
 
-
-# Way 2
+# Way 3
 
 print(df[df['Title'] == 'Engineer'])
 
 
-# Way3
 
 
 
