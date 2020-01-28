@@ -6,18 +6,26 @@ X = np.array(X).reshape((1, -1))        # To avoid the reshape np error
 y = np.array(y).reshape((1, -1))
 
 
-
 # Way 2 
 
 X = dataset.iloc[:,:4]
 y = dataset.loc[:,'price']
 print(X,y)
 
+
 # Way 3
 
 print(df[df['Title'] == 'Engineer'])
 
 
+# Way 4
+X = df['alcohol']
+y = df['quality']
+X = np.array(df['alcohol']).reshape((1, -1))
+#X = X.reshape(X.shape[1:])
+y = np.array(y).reshape((1,-1))
+#X = X.transpose()
+print(X,y)
 
 
 
